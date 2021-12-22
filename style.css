@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: "Open Sans", sans-serif;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 120%;
+    transition: 1s ease all;
+}
+.card{
+    background-color: #000000d0;
+    color: white;
+    padding: 3em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    transition: 1s ease all;
+}
+.card p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.card span{
+    cursor: pointer;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    font-family: inherit;
+    color: inherit;
+    font-size: 120%;
+    width: calc(100%-80px);
+}
+
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 3.5em;
+    height: 3.5em;
+    background: #7c7c7c2b;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+button:hover{
+    background: #7c7c7c6b;
+    cursor: pointer;
+}
+
+.weather{
+    padding: 2em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+.active{
+    font-weight: bold;
+}
