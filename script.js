@@ -26,7 +26,7 @@ let weather = {
     //function to fetch data
     getWeather : async function(city) {
         try{
-            const res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`);
+            const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}`);
             let data = res.data;
             this.displayWeather(data);
         }
